@@ -413,3 +413,9 @@ body {
         transform: translateX(-50%);
     }
 }
+
+@media (min-width: 1535px) and (max-width: 2600px) {
+    .words span {
+        color: rgb(77, 0, 0);
+    }
+}
