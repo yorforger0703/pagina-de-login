@@ -30,28 +30,29 @@
                 <button class="btn-2" id="registro">Criar Conta</button>
             </div>
 
-            <div class="login-formulario">
+            <form class="login-formulario" id="loginFormulario">
                 <div class="titulo">
                     <span>Entrar</span>
                 </div>
                 <div class="formulario-inputs">
                     <div class="input-box">
-                        <input type="text" class="campo-input" placeholder="Usuário" required>
+                        <input type="email" class="campo-input" id="loginuser" placeholder="E-mail" required>
                         <i class="bx bx-user icon"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="campo-input" placeholder="Senha" required>
+                        <input type="password" class="campo-input" id="loginsenha" placeholder="Senha" required>
                         <i class="bx bx-lock-alt icon"></i>
                     </div>
                     <div class="esqueceu-senha">
                         <a href="#">Esqueceu a senha?</a>
                     </div>
                     <div class="input-box">
-                        <button class="input-submit">
+                        <button type="submit" class="input-submit">
                             <span>Entrar</span>
                             <i class="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>
+                    <div id="resultado2"></div>
                 </div>
                 <div class="social-login">
                     <i class="bx bxl-google"></i>
@@ -59,34 +60,36 @@
                     <i class="bx bxl-twitter"></i>
                     <i class="bx bxl-github"></i>
                 </div>
-            </div>
+            </form>
 
-            <div class="registro-formulario">
+            <form class="registro-formulario" id="registroFormulario">
                 <div class="titulo">
                     <span>Criar Conta</span>
                 </div>
                 <div class="formulario-inputs">
                     <div class="input-box">
-                        <input type="text" class="campo-input" placeholder="E-mail" required>
+                        <input type="email" class="campo-input" id="emailcriar" placeholder="E-mail" required>
                         <i class="bx bx-envelope icon"></i>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="campo-input" placeholder="Usuário" required>
+                        <input type="text" class="campo-input" id="usuariocriar" placeholder="Nome de usuário" required>
                         <i class="bx bx-user icon"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="campo-input" placeholder="Senha" required>
+                        <input type="password" class="campo-input" id="senhacriar" placeholder="Crie sua senha" required>
                         <i class="bx bx-lock-alt icon"></i>
                     </div>
-                    <div class="esqueceu-senha">
-                        <a href="#">Esqueceu a senha?</a>
+                    <div class="input-box">
+                        <input type="password" class="campo-input" id="repitasenha" placeholder="Repita a senha" required>
+                        <i class="bx bx-lock-alt icon"></i>
                     </div>
                     <div class="input-box">
-                        <button class="input-submit">
+                        <button type="submit" class="input-submit">
                             <span>Criar Conta</span>
                             <i class="bx bx-right-arrow-alt"></i>
                         </button>
                     </div>
+                    <div id="resultado"></div>
                 </div>
                 <div class="social-login">
                     <i class="bx bxl-google"></i>
@@ -94,11 +97,13 @@
                     <i class="bx bxl-twitter"></i>
                     <i class="bx bxl-github"></i>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="criarconta.js"></script>
+    <script src="login.js"></script>
 </body>
 
 </html>
